@@ -7,4 +7,7 @@ public class Asteroide extends Actor {
     public void act() {
         // Add your action code here.
     }    
+    public void crearAsteroide(){
+        GreenfootImage.setImage("asteroid.png");
+    }
 }
