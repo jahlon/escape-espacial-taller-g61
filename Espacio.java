@@ -11,7 +11,7 @@ public class Espacio extends World {
     private Boton botonRetry;
     
     public Espacio() {    
-        super(800, 600, 1); 
+        super(800, 600, 1,false); 
         
         // Configurar fondo negro
         GreenfootImage fondo = getBackground();
