@@ -21,4 +21,8 @@ public class Espacio extends World {
         // Asignar el orden en que se pintan los objetos
         setPaintOrder(Boton.class, Counter.class, Nave.class, Asteroide.class, Estrella.class);
     }
+	
+	private void generarEstrella() {
+		
+	}
 }
