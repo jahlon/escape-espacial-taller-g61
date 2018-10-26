@@ -13,7 +13,11 @@ dependency3.from=Espacio
 dependency3.to=Boton
 dependency3.type=UsesDependency
 dependency4.from=Espacio
+<<<<<<< HEAD
 dependency4.to=Asteroide
+=======
+dependency4.to=Estrella
+>>>>>>> 320804c3626331fafb711c669f4cc1a73334140a
 dependency4.type=UsesDependency
 dependency5.from=Espacio
 dependency5.to=Estrella
@@ -21,6 +25,7 @@ dependency5.type=UsesDependency
 dependency6.from=Nave
 dependency6.to=Explosion
 dependency6.type=UsesDependency
+<<<<<<< HEAD
 dependency7.from=Nave
 dependency7.to=Asteroide
 dependency7.type=UsesDependency
@@ -30,6 +35,14 @@ editor.fx.0.x=-8
 editor.fx.0.y=-8
 height=744
 package.numDependencies=7
+=======
+editor.fx.0.height=738
+editor.fx.0.width=816
+editor.fx.0.x=275
+editor.fx.0.y=-3
+height=744
+package.numDependencies=6
+>>>>>>> 320804c3626331fafb711c669f4cc1a73334140a
 package.numTargets=8
 project.charset=UTF-8
 publish.hasSource=false

@@ -15,7 +15,7 @@
  * timer.mark();
  * </pre>
  * 
- * Thereafter, you can use the millisElapsed() method to find out how long it's been since mark()
+ * Thereafter, you can use the millisElapsed() method to find out how long it's been .....0.
  * was called (in milliseconds, i.e. thousandths of a second).  So if you want to only allow the player to fire a shot every second, you
  * could write:
  * 

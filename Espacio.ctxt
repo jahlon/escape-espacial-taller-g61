@@ -2,4 +2,10 @@
 comment0.target=Espacio
 comment1.params=
 comment1.target=Espacio()
-numComments=2
+comment2.params=
+comment2.target=void\ generarEstrella()
+comment3.params=
+comment3.target=void\ terminarJuego()
+comment4.params=
+comment4.target=void\ act()
+numComments=5
