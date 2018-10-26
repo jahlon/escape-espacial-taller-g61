@@ -1,6 +1,10 @@
 #BlueJ class context
 comment0.target=Nave
 comment1.params=
+comment1.target=void\ explotarNave()
+comment2.params=
+comment2.target=void\ act()
+numComments=3
 comment1.target=void\ mover()
 comment2.params=
 comment2.target=void\ trasladar()
