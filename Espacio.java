@@ -4,15 +4,16 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Espacio extends World {
     
     private GreenfootSound sonidoDeFondo;
-    private int tiempoJuego;
+    private int tiempo;
     private int tiempoGeneracionAsteroides;
-    private SimpleTimer timer = new SimpleTimer();
+    private SimpleTimer timerAsteroide;
+    private Asteroide asteroide;
     private Nave nave;
     private Counter contador;
     private Boton botonRetry;
     
     public Espacio() {    
-        super(800, 600, 1); 
+        super(800, 600, 1, false); 
         
         // Configurar fondo negro
         GreenfootImage fondo = getBackground();
@@ -21,17 +22,23 @@ public class Espacio extends World {
         
         // Asignar el orden en que se pintan los objetos
         setPaintOrder(Boton.class, Counter.class, Nave.class, Asteroide.class, Estrella.class);
-    }
-    
-    public void pasoTiempoGenerarAsteroide() {
-        timer.mark();
-        if (timer.millisElapsed() > 1000 && Greenfoot.isKeyDown("space")){
-            generarAsteroide();
-            timer.mark();
-        }
+        timerAsteroide = new SimpleTimer();
+        tiempoGeneracionAsteroides = 1000;
+        
     }
     
     public void generarAsteroide() {
-        Asteroide asteroide = new Asteroide();
+        if (timerAsteroide.millisElapsed() > tiempoGeneracionAsteroides) {
+            timerAsteroide.mark();
+            int y = -5;
+            int x = Greenfoot.getRandomNumber(getWidth());
+            asteroide = new Asteroide();
+            asteroide.turnTowards(nave.getX(), nave.getY());
+            addObject (asteroide, x, y);
+        }
+    }
+    
+    public void act() {
+        generarAsteroide();
     }
 }
